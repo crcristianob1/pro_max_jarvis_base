@@ -2,7 +2,7 @@ services:
   - type: web
     name: pro-max-jarvis
     env: python
-    buildCommand: "pip install -r requisitos.txt"
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn app:app"
     plan: free
     branch: principal
